@@ -342,6 +342,7 @@ button span:hover {
 .latese-posts__list {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .latese-posts__item {
@@ -349,6 +350,9 @@ button span:hover {
 	background-color: rgb(11, 20, 32);
 	text-align: center;
 	padding-bottom: 4rem;
+	max-width: 369px;
+	width: 100%;
+	margin-bottom: 2rem;
 }
 
 .latese-posts__item:not(:last-child) {
@@ -379,6 +383,7 @@ button span:hover {
 }
 
 /* MEDIA */
+
 @media screen and (max-width: 979px) {
 	.site-logo {
 		width: 180px;
@@ -394,6 +399,16 @@ button span:hover {
 
 	.sitenav__link {
 		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 830px) {
+	.latese-posts__item {
+		max-width: 100vw;
+	}
+
+	.latese-posts__item-img {
+		width: 100%;
 	}
 }
 
@@ -415,6 +430,59 @@ button span:hover {
 	.sitenav__link {
 		font-size: 1.6rem;
 		font-weight: 500;
+	}
+
+	.latese-posts {
+		padding-top: 4rem;
+		padding-bottom: 5rem;
+	}
+
+	.latese-posts__info {
+		margin-bottom: 6rem;
+	}
+
+	.latese-posts__title {
+		font-size: 3.6rem;
+	}
+
+	.latese-posts__img {
+		margin-left: 1.2rem;
+	}
+
+	.latese-posts__item {
+		padding-bottom: 3.6rem;
+		margin-bottom: 1.8rem;
+	}
+
+	.latese-posts__item:not(:last-child) {
+		margin-right: 1.2rem;
+	}
+
+	.latese-posts__item-img {
+		margin-bottom: 1.8rem;
+	}
+
+	.latese-posts__item-title {
+		font-size: 2.2rem;
+		margin-bottom: 1.2rem;
+	}
+
+	.latese-posts__item-paragph {
+		font-size: 2.2rem;
+	}
+}
+
+@media screen and (max-width: 830px) {
+	.latese-posts__item {
+		max-width: 0;
+	}
+
+	.latese-posts__item:not(:last-child) {
+		margin-right: 1.2rem;
+	}
+
+	.latese-posts__item-img {
+		width: 100%;
 	}
 }
 
@@ -512,6 +580,46 @@ button span:hover {
 	.hero__img img {
 		width: 100px;
 		height: 100px;
+	}
+
+	.latese-posts {
+		padding-top: 3.4rem;
+		padding-bottom: 4.2rem;
+	}
+
+	.latese-posts__info {
+		margin-bottom: 2.9rem;
+	}
+
+	.latese-posts__title {
+		font-size: 2rem;
+	}
+
+	.latese-posts__img {
+		margin-left: 0;
+	}
+
+	.latese-posts__item {
+		padding-bottom: 4rem;
+		margin-bottom: 1.8rem;
+	}
+
+	.latese-posts__item-img {
+		margin-bottom: 1.4rem;
+	}
+
+	.latese-posts__item-title {
+		font-size: 1.5rem;
+		margin-bottom: 0.2rem;
+	}
+
+	.latese-posts__item-paragph {
+		font-size: 1.2rem;
+		margin-bottom: 0.8rem;
+	}
+
+	.latese-posts__item-text {
+		font-size: 1.2rem;
 	}
 }
 
